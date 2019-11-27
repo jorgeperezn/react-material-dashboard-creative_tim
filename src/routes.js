@@ -16,32 +16,29 @@
 
 */
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
-import Person from "@material-ui/icons/Person";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
-import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Notifications from "@material-ui/icons/Notifications";
-import Unarchive from "@material-ui/icons/Unarchive";
-import Language from "@material-ui/icons/Language";
+import PersonIcon from "@material-ui/icons/Person";
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import BubbleChartIcon from "@material-ui/icons/BubbleChart";
+import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 // core components/views for Admin layout
-import DashboardPage from "views/Dashboard/Dashboard.js";
-import UserProfile from "views/UserProfile/UserProfile.js";
+import Maps from "views/Maps/Maps.js";
+import Icons from "views/Icons/Icons.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
-import Icons from "views/Icons/Icons.js";
-import Maps from "views/Maps/Maps.js";
+import DashboardPage from "views/Dashboard/Dashboard.js";
+import UserProfile from "views/UserProfile/UserProfile.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
-import RTLPage from "views/RTLPage/RTLPage.js";
+import CsUsers from "views/CsUsers/CsUsers";
 
 const dashboardRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
-    icon: Dashboard,
+    icon: DashboardIcon,
     component: DashboardPage,
     layout: "/admin"
   },
@@ -49,7 +46,7 @@ const dashboardRoutes = [
     path: "/user",
     name: "User Profile",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
+    icon: PersonIcon,
     component: UserProfile,
     layout: "/admin"
   },
@@ -65,7 +62,7 @@ const dashboardRoutes = [
     path: "/typography",
     name: "Typography",
     rtlName: "طباعة",
-    icon: LibraryBooks,
+    icon: LibraryBooksIcon,
     component: Typography,
     layout: "/admin"
   },
@@ -73,15 +70,23 @@ const dashboardRoutes = [
     path: "/icons",
     name: "Icons",
     rtlName: "الرموز",
-    icon: BubbleChart,
+    icon: BubbleChartIcon,
     component: Icons,
+    layout: "/admin"
+  },
+  {
+    path: "/csusers",
+    name: "Cs Users",
+    rtlName: "ملف تعريفي",
+    icon: BubbleChartIcon,
+    component: CsUsers,
     layout: "/admin"
   },
   {
     path: "/maps",
     name: "Maps",
     rtlName: "خرائط",
-    icon: LocationOn,
+    icon: LocationOnIcon,
     component: Maps,
     layout: "/admin"
   },
@@ -89,24 +94,8 @@ const dashboardRoutes = [
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
-    icon: Notifications,
+    icon: NotificationsIcon,
     component: NotificationsPage,
-    layout: "/admin"
-  },
-  {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
-    component: RTLPage,
-    layout: "/rtl"
-  },
-  {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
-    icon: Unarchive,
-    component: UpgradeToPro,
     layout: "/admin"
   }
 ];
