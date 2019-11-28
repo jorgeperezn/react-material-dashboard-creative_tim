@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "firstname": "Anabel",
+    "lastname": "Guzman",
+    "area": "Marketing",
+    "role": "Digital Marketing Manager",
+    "email": "anabel.guzman@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 2,
+    "firstname": "Alejandra",
+    "lastname": "Sandoval",
+    "area": "Marketing",
+    "role": "Digital Marketing Specialist",
+    "email": "alejandra.sandoval@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 3,
+    "firstname": "Rumel",
+    "lastname": "Correa",
+    "area": "Marketing",
+    "role": "Graphic Designer",
+    "email": "rumel.correa@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 4,
+    "firstname": "Juan",
+    "lastname": "Urrea",
+    "area": "Human Resources",
+    "role": "Human Talent Engineer",
+    "email": "juan.urrea@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 5,
+    "firstname": "Juan",
+    "lastname": "Pablo",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "jp.amaya@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 6,
+    "firstname": "Camilo",
+    "lastname": "Lopez",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "camilo.lopez@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 7,
+    "firstname": "Sebastian",
+    "lastname": "Benavides",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "sebastian.benavides@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 8,
+    "firstname": "Jose",
+    "lastname": "Beltran",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "jose.beltran@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 9,
+    "firstname": "Eduardo",
+    "lastname": "Prado",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "eduardo.prado@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 10,
+    "firstname": "Santiago",
+    "lastname": "Perez",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "santiago.perez@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 11,
+    "firstname": "Santiago",
+    "lastname": "Hyun",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "santiago.hyun@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 12,
+    "firstname": "Julian",
+    "lastname": "Navarro",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "julian.navarro@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 13,
+    "firstname": "Edwin",
+    "lastname": "Caldon",
+    "area": "Development",
+    "role": "Product Engineer",
+    "email": "edwin.caldon@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 14,
+    "firstname": "Jairo",
+    "lastname": "Diaz",
+    "area": "Management",
+    "role": "Founder & CEO",
+    "email": "jairo.diaz@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 15,
+    "firstname": "Miguel",
+    "lastname": "Diaz",
+    "area": "Management",
+    "role": "Technical Director",
+    "email": "miguel.diaz@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  },
+  {
+    "id": 16,
+    "firstname": "Jorge",
+    "lastname": "Perez",
+    "area": "Management",
+    "role": "Project Manager",
+    "email": "jorge.perez@codescrum.com",
+    "photo": "https://codescrum.com/images/clients/people/ghost_person_200x200.png"
+  }
+]
