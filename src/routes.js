@@ -31,6 +31,7 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 // core components/views for RTL layout
+import CsUser from "views/CsUsers/CsUser";
 import CsUsers from "views/CsUsers/CsUsers";
 
 const dashboardRoutes = [
@@ -81,6 +82,15 @@ const dashboardRoutes = [
     icon: BubbleChartIcon,
     component: CsUsers,
     layout: "/admin"
+  },
+  {
+    path: "/codescrum_user/:user_id",
+    name: "Cs User",
+    rtlName: "عريفي",
+    icon: BubbleChartIcon,
+    component: CsUser,
+    layout: "/admin",
+    invisible: true
   },
   {
     path: "/maps",

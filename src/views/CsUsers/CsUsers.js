@@ -123,7 +123,7 @@ export default function CsUsers() {
               columns={state.columns}
               data={state.data}
               onRowClick={(event, rowData) => {
-                history.push("/admin/user/" + rowData.id);
+                history.push("/admin/codescrum_user/" + rowData.id);
                 // console.log(rowData.firstname);
               }}
               editable={{
