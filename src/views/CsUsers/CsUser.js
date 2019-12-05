@@ -188,7 +188,7 @@ export default function CsUser() {
         <GridItem xs={12} sm={12} md={4}>
           <Card profile>
             <CardAvatar profile>
-              <a href="#" onClick={e => e.preventDefault()}>
+              <a href="www.google.com" onClick={e => e.preventDefault()}>
                 <img src={user.photo} alt={user.firstname} />
               </a>
             </CardAvatar>

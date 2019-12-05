@@ -84,8 +84,9 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/codescrum_user/:user_id",
-    name: "Cs User",
+    path: "/codescrum_user",
+    param: "/:user_id",
+    name: "Codescrum User",
     rtlName: "عريفي",
     icon: BubbleChartIcon,
     component: CsUser,
