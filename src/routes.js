@@ -77,7 +77,7 @@ const dashboardRoutes = [
   },
   {
     path: "/csusers",
-    name: "Cs Users",
+    name: "Codescrum Users",
     rtlName: "ملف تعريفي",
     icon: BubbleChartIcon,
     component: CsUsers,

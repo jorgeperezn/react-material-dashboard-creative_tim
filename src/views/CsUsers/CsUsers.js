@@ -59,7 +59,7 @@ const styles = {
     verticalAlign: "middle",
     fontSize: "0.8125rem"
   },
-  tableHeadStyle: {
+  tableHeaderStyle: {
     color: "inherit",
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     fontWeight: "300",
@@ -68,6 +68,10 @@ const styles = {
   },
   tableRowStyle: {
     cursor: "pointer"
+  },
+  tableEditRowStyle: {
+    fontWeight: 100,
+    textTransform: "initial"
   }
 };
 
@@ -164,9 +168,20 @@ export default function CsUsers() {
                   })
               }}
               options={{
-                headerStyle: styles.tableHeadStyle,
                 rowStyle: styles.tableRowStyle,
+                headerStyle: styles.tableHeaderStyle,
                 pageSize: 10
+              }}
+              localization={{
+                body: {
+                  editRow: {
+                    deleteText: (
+                      <span style={styles.tableEditRowStyle}>
+                        Are you sure you want to delete this user?
+                      </span>
+                    )
+                  }
+                }
               }}
               style={styles.tableStyle}
             />
