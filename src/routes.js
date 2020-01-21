@@ -33,6 +33,7 @@ import NotificationsPage from "views/Notifications/Notifications.js";
 // core components/views for RTL layout
 import CsUser from "views/CsUsers/CsUser";
 import CsUsers from "views/CsUsers/CsUsers";
+import BlankTemplate from "views/Templates/BlankTemplate";
 
 const dashboardRoutes = [
   {
@@ -107,6 +108,14 @@ const dashboardRoutes = [
     rtlName: "إخطارات",
     icon: NotificationsIcon,
     component: NotificationsPage,
+    layout: "/admin"
+  },
+  {
+    path: "/blanktemplate",
+    name: "Blank Template",
+    rtlName: "ملف تعريفي",
+    icon: BubbleChartIcon,
+    component: BlankTemplate,
     layout: "/admin"
   }
 ];
