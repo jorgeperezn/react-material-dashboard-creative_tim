@@ -31,6 +31,9 @@ import Icons from "views/Icons/Icons.js";
 import Maps from "views/Maps/Maps.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 
+// Templates
+import BlankTemplate from "views/Templates/BlankTemplate.js";
+
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -86,6 +89,14 @@ const dashboardRoutes = [
     rtlName: "إخطارات",
     icon: Notifications,
     component: NotificationsPage,
+    layout: "/admin"
+  },
+  {
+    path: "/blanktemplate",
+    name: "Blank Template",
+    rtlName: "قائمة الجدول",
+    icon: "content_paste",
+    component: BlankTemplate,
     layout: "/admin"
   }
 ];
