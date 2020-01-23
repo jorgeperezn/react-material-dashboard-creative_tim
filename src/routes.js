@@ -16,12 +16,12 @@
 
 */
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
-import Person from "@material-ui/icons/Person";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
-import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Notifications from "@material-ui/icons/Notifications";
+import IconDashboard from "@material-ui/icons/Dashboard";
+import IconPerson from "@material-ui/icons/Person";
+import IconLibraryBooks from "@material-ui/icons/LibraryBooks";
+import IconBubbleChart from "@material-ui/icons/BubbleChart";
+import IconLocationOn from "@material-ui/icons/LocationOn";
+import IconNotifications from "@material-ui/icons/Notifications";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
@@ -39,7 +39,7 @@ const dashboardRoutes = [
     path: "/dashboard",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
-    icon: Dashboard,
+    icon: IconDashboard,
     component: DashboardPage,
     layout: "/admin"
   },
@@ -47,7 +47,7 @@ const dashboardRoutes = [
     path: "/user",
     name: "User Profile",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
+    icon: IconPerson,
     component: UserProfile,
     layout: "/admin"
   },
@@ -63,7 +63,7 @@ const dashboardRoutes = [
     path: "/typography",
     name: "Typography",
     rtlName: "طباعة",
-    icon: LibraryBooks,
+    icon: IconLibraryBooks,
     component: Typography,
     layout: "/admin"
   },
@@ -71,7 +71,7 @@ const dashboardRoutes = [
     path: "/icons",
     name: "Icons",
     rtlName: "الرموز",
-    icon: BubbleChart,
+    icon: IconBubbleChart,
     component: Icons,
     layout: "/admin"
   },
@@ -79,7 +79,7 @@ const dashboardRoutes = [
     path: "/maps",
     name: "Maps",
     rtlName: "خرائط",
-    icon: LocationOn,
+    icon: IconLocationOn,
     component: Maps,
     layout: "/admin"
   },
@@ -87,7 +87,7 @@ const dashboardRoutes = [
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
-    icon: Notifications,
+    icon: IconNotifications,
     component: NotificationsPage,
     layout: "/admin"
   },
@@ -95,7 +95,7 @@ const dashboardRoutes = [
     path: "/blanktemplate",
     name: "Blank Template",
     rtlName: "قائمة الجدول",
-    icon: "content_paste",
+    icon: IconLibraryBooks,
     component: BlankTemplate,
     layout: "/admin"
   }
