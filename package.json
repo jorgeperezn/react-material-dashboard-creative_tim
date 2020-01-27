@@ -10,6 +10,7 @@
     "chartist": "0.10.1",
     "classnames": "2.2.6",
     "history": "4.9.0",
+    "namor": "^2.0.2",
     "perfect-scrollbar": "1.4.0",
     "prop-types": "15.7.2",
     "react": "16.9.0",
@@ -18,7 +19,8 @@
     "react-google-maps": "9.4.5",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.1.0",
-    "react-swipeable-views": "0.13.3"
+    "react-swipeable-views": "0.13.3",
+    "react-table": "^7.0.0-rc.15"
   },
   "scripts": {
     "start": "react-scripts start",

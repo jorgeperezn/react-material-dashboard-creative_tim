@@ -47,12 +47,18 @@ export default function BlankTemplate() {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+            <h4 className={classes.cardTitleWhite}>Blank Template</h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              Here is a subtitle for this template
             </p>
           </CardHeader>
-          <CardBody>Content</CardBody>
+          <CardBody>
+            <h4>Content</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            natus maxime ullam! Quidem illum, minus totam ab temporibus
+            voluptatum ipsam ad, quod beatae expedita doloremque, modi labore
+            quasi magni eos.
+          </CardBody>
         </Card>
       </GridItem>
     </GridContainer>

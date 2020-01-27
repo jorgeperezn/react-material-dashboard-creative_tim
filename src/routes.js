@@ -33,6 +33,7 @@ import NotificationsPage from "views/Notifications/Notifications.js";
 
 // Templates
 import BlankTemplate from "views/Templates/BlankTemplate.js";
+import TableTemplate from "views/Templates/TableTemplate.js";
 
 const dashboardRoutes = [
   {
@@ -52,7 +53,7 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/table",
+    path: "/tablelist",
     name: "Table List",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
@@ -97,6 +98,14 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: IconLibraryBooks,
     component: BlankTemplate,
+    layout: "/admin"
+  },
+  {
+    path: "/tabletemplate",
+    name: "Table Template",
+    rtlName: "قائمة الجدول",
+    icon: IconLibraryBooks,
+    component: TableTemplate,
     layout: "/admin"
   }
 ];
