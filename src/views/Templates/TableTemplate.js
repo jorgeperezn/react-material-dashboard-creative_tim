@@ -14,8 +14,10 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import TableFooter from "@material-ui/core/TableFooter";
+import TablePagination from "@material-ui/core/TablePagination";
 // @react-table
-import { useTable, useSortBy } from "react-table";
+import { useTable, useSortBy, usePagination } from "react-table";
 // asset components
 import makeData from "assets/js/makeData.js";
 import tableStyles from "assets/jss/material-dashboard-react/components/tableStyle.js";
@@ -54,12 +56,31 @@ function Table({ columns, data }) {
   const useStyles = makeStyles(tableStyles);
 
   // Use the state and functions returned from useTable to build your UI
-  const { getTableProps, headerGroups, rows, prepareRow } = useTable(
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    prepareRow,
+    // Instead of using 'rows', we'll use page, which has only the rows for the active page
+    page,
+    // The rest of these things are super handy, too ;)
+    canNextPage,
+    canPreviousPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    state: { pageIndex, pageSize }
+  } = useTable(
     {
       columns,
-      data
+      data,
+      initialState: { pageIndex: 0 }
     },
-    useSortBy
+    useSortBy,
+    usePagination
   );
 
   const classes = useStyles();
@@ -94,8 +115,8 @@ function Table({ columns, data }) {
             </TableRow>
           ))}
         </TableHead>
-        <TableBody>
-          {rows.map((row, key) => {
+        <TableBody {...getTableBodyProps()}>
+          {page.map((row, key) => {
             prepareRow(row);
             return (
               <TableRow
@@ -118,7 +139,62 @@ function Table({ columns, data }) {
             );
           })}
         </TableBody>
+        <TableFooter>
+          <TableRow>
+            <TablePagination
+              rowsPerPageOptions={[10, 20, 30, 40, 50]}
+              count={pageOptions.length}
+              rowsPerPage={pageSize}
+              page={pageIndex}
+              onChangePage={() => nextPage()}
+            />
+          </TableRow>
+        </TableFooter>
       </MaUTable>
+      <div className="pagination">
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {"<<"}
+        </button>{" "}
+        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+          {"<"}
+        </button>{" "}
+        <button onClick={() => nextPage()} disabled={!canNextPage}>
+          {">"}
+        </button>{" "}
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {">>"}
+        </button>{" "}
+        <span>
+          Page{" "}
+          <strong>
+            {pageIndex + 1} of {pageOptions.length}
+          </strong>{" "}
+        </span>
+        <span>
+          | Go to page:{" "}
+          <input
+            type="number"
+            defaultValue={pageIndex + 1}
+            onChange={e => {
+              const page = e.target.value ? Number(e.target.value) - 1 : 0;
+              gotoPage(page);
+            }}
+            style={{ width: "100px" }}
+          />
+        </span>{" "}
+        <select
+          value={pageSize}
+          onChange={e => {
+            setPageSize(Number(e.target.value));
+          }}
+        >
+          {[10, 20, 30, 40, 50].map(pageSize => (
+            <option key={pageSize} value={pageSize}>
+              Show {pageSize}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 }
@@ -167,7 +243,7 @@ export default function TableTemplate() {
     []
   );
 
-  const data = React.useMemo(() => makeData(20), []);
+  const data = React.useMemo(() => makeData(100), []);
 
   return (
     <GridContainer>
